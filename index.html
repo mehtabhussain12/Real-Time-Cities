@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Time Cities</title>
+</head>
+<style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 350px;
+      background-color: #fff;
+      padding: 20px 30px;
+      border-radius: 20px;
+      
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #4f9df7;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #357ae8;
+    }
+
+    #list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-left: 0;
+    }
+
+    #list li {
+      background-color: #eaf4ff;
+      padding: 10px 12px;
+      border-radius: 8px;
+      color: #333;
+          }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cities</h1>
+    <div class="btn">
+      <button onclick="showlist()">Show Cities</button>
+      <button onclick="Addmore()">Add City</button>
+    </div>
+    <ul id="list"></ul>
+  </div>
+    <script src="index.js"></script>
+</body>
+</html>
